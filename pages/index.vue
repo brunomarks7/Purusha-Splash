@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <div>
+    <div class="mobile">
       <logo />
       <h2 class="subtitle">
         Marca com o olhar voltado ao bem estar e auto cuidado. Nossa inspiração vem do Yoga/Meditação.
@@ -38,6 +38,10 @@ export default {
 </script>
 
 <style>
+
+* {
+  box-sizing: border-box;
+}
 .container {
   margin: 0 auto;
   min-height: 100vh;
@@ -46,6 +50,11 @@ export default {
   align-items: center;
   text-align: center;
   font-family: 'Open Sans', -apple-system, BlinkMacSystemFont;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 .subtitle {
@@ -66,5 +75,21 @@ p {
   font-weight: 300;
   line-height: 22px;
   margin: 20px 0 0;
+}
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 980px) {
+  .container {
+    display: block;
+  }
+  .mobile {
+    padding: 12px;
+    padding-bottom: 60px;
+  }
+  .links {
+    font-size: 13px;
+  }
+  
 }
 </style>
