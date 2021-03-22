@@ -15,6 +15,9 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
+  googleAnalytics: {
+    id: 'UA-138660710-1'
+  },
   /*
   ** Customize the progress-bar color
   */
@@ -33,6 +36,7 @@ export default {
   ** Nuxt.js dev-modules
   */
   buildModules: [
+    '@nuxtjs/google-analytics'
   ],
   /*
   ** Nuxt.js modules
